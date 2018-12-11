@@ -22,8 +22,12 @@ EOF
 #                                ccn1D.data ccn2D.data ccn3D.data ccn4D.data ; do
 
 #acs='1.0 0.1 0.01 0.001'
+#in foffice
 #acs='1.0'
+#in foffice2
 acs='0.035'
+#in fmine
+#acs='0.005'
 #COMs='ASd NACLd HCLd Sd Nd'
 COMs='0 1 2 3 4 5 6 7 8'
 ambcase=2
