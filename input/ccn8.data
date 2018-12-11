@@ -1,0 +1,6 @@
+"4.BK aged urban plume, from Whitby (1978)"
+ 3                          'NCCN: number of CCN mode'
+  6600.    0.47000362924        7.0E-9         'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+  9600.    0.60976557162       60.0E-9        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+     7.2   0.75141608868      415.0E-9        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+

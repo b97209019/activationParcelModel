@@ -1,0 +1,6 @@
+"maritime aerosol, from Jaenicke, p.12 (in Hobbs, 1993)"
+ 3                          'NCCN: number of CCN mode'
+  133.    0.657  3.9E-9         'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+   66.6   0.210  1.33E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+    3.06  0.396  2.9E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+

@@ -1,0 +1,5 @@
+"remote continental, from Jaenicke, p.12 (in Hobbs, 1993)"
+ 3                          'NCCN: number of CCN mode'
+ 3200.  0.161  1.0E-8        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+ 2900.  0.217  5.8E-8        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+  0.3   0.380  9.0E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'

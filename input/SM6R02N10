@@ -1,0 +1,3 @@
+"SM6 R02 N10"
+  1                         'NCCN: number of CCN mode'
+  1000 0.69314718055994529  .02e-6  'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'

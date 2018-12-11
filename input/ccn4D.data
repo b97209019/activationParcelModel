@@ -1,0 +1,5 @@
+"4. urban average, from Whitby (1978)"
+  3                          'NCCN: number of CCN mode'
+ 212000.   0.5877866649  0.007E-6     'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+  64000.   0.77010822169 0.027E-6     'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+     10.8  0.79299251553  0.43E-6      'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'

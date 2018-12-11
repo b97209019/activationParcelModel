@@ -1,0 +1,8 @@
+#	U3m/s,	aW,	DTs,	TSTART,	TSTOP,	printDts
+	10,	0,	1e-1,	0,	288000,	60
+#	P(hPa),	T(K),	RH(%),	Z(m),	ac
+	550.	16.	100.	0.	1.0
+#	aerosoltype	aerosol_distribution_file_name	nbin
+	lognormal	SM6R10N10			200
+#	kappa_file
+	kap02

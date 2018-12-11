@@ -1,0 +1,5 @@
+"1.marine surface background, from Whitby (1978)"
+  3                         'NCCN: number of CCN mode'
+  340.   0.47000362924  0.005E-6      'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+   60.   0.69314718056  0.0355E-6     'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+    3.1  0.99325177301  0.31E-6       'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'

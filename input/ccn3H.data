@@ -1,0 +1,5 @@
+"3. average background, from Whitby (1978)"
+ 3                          'NCCN: number of CCN mode'
+ 3200.   0.53062825106    7.5E-9     'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+ 1150.   0.69314718056    38.E-9     'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+    1.6  0.77010822169   0.51E-6     'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
