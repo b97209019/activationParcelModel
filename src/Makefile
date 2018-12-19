@@ -1,7 +1,7 @@
 CPP	= g++
 FLAGS	:= -lm -fopenmp -fPIC -lgomp
-#FLAGS	+= -O3
-FLAGS	+= -g
+FLAGS	+= -O3
+#FLAGS	+= -g
 FLAGS	+= -D PARALLEL
 #FLAGS	+= -D __AS__
 #FLAGS	+= -D __TCK__

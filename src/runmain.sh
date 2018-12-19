@@ -8,7 +8,7 @@ function output(){
 #	aerosoltype	aerosol_distribution_file_name	nbin
 	lognormal	${ccn_type}			200
 #	kappa_file
-	kapt${COM}
+	kap${COM}
 EOF
 }
 #	powerlaw	${ccn_type}
@@ -23,14 +23,14 @@ EOF
 
 #acs='1.0 0.1 0.01 0.001'
 #in foffice
-#acs='1.0'
+acs='1.0'
 #in foffice2
-acs='0.035'
+#acs='0.035'
 #in fmine
 #acs='0.005'
-#COMs='ASd NACLd HCLd Sd Nd'
-COMs='0 1 2 3 4 5 6 7 8'
-ambcase=2
+COMs='ASd NACLd HCLd Sd Nd'
+#COMs='t0 t1 t2 t3 t4 t5 t6 t7 t8'
+ambcase=1
 case $ambcase in
 1)
     Ws='0.1 0.21544347 0.46415888 1.0 2.15443469 4.64158883 10.'
@@ -44,7 +44,7 @@ case $ambcase in
 ;;
 esac
 
-ccntycase=3
+ccntycase=1
 case $ccntycase in
 1)
     ccntys='SM1 SM2 SM3 SM4 SM5 '
@@ -65,7 +65,7 @@ case $ccntycase in
 ;;
 esac
 
-output="../output/exp_set_12_12_18_testac${acs}_"
+output="../output/exp_set_12_12_18_fitac${acs}_"
 
 for COM in ${COMs}; do 
     for ac in ${acs}; do 
