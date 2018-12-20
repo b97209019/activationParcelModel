@@ -23,17 +23,28 @@ EOF
 
 #acs='1.0 0.1 0.01 0.001'
 #in foffice
-acs='1.0'
+#acs='1.0'
 #in foffice2
-#acs='0.035'
+acs='0.035'
 #in fmine
 #acs='0.005'
-COMs='ASd NACLd HCLd Sd Nd'
-#COMs='t0 t1 t2 t3 t4 t5 t6 t7 t8'
-ambcase=1
+foruse='fit'
+
+case $foruse in
+fit)
+    COMs='ASd NACLd HCLd Sd Nd'
+    ambcase=1
+    ccntycase=1
+;;
+test)
+    COMs='t0 t1 t2 t3 t4 t5 t6 t7 t8'
+    ambcase=2
+    ccntycase=3
+;;
+esac
 case $ambcase in
 1)
-    Ws='0.1 0.21544347 0.46415888 1.0 2.15443469 4.64158883 10.'
+    Ws='10. 4.64158883 2.15443469 1.0 0.46415888 0.21544347 0.1'
     Ps='1000 900 800 700 600 500'
     Ts='-5 0 5 10 15 20 25 30'
 ;;
@@ -44,7 +55,6 @@ case $ambcase in
 ;;
 esac
 
-ccntycase=1
 case $ccntycase in
 1)
     ccntys='SM1 SM2 SM3 SM4 SM5 '
@@ -65,7 +75,7 @@ case $ccntycase in
 ;;
 esac
 
-output="../output/exp_set_12_12_18_fitac${acs}_"
+output="../output/exp_set_12_20_18_${foruse}ac${acs}_"
 
 for COM in ${COMs}; do 
     for ac in ${acs}; do 

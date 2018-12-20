@@ -131,8 +131,8 @@ void Particle::update_h2om(real8 h2om){
         /M_4PID3 ); 
     real8 r_lambda = this->wet_radius+tpecoefp->mean_free_path,
     q1 = this->wet_radius/r_lambda ,
-    q2 = r_lambda*tpecoefp->thermal_velocity_vapor,
-    q3 = r_lambda*tpecoefp->thermal_velocity_air;
+    q2 = this->wet_radius*tpecoefp->thermal_velocity_vapor,
+    q3 = this->wet_radius*tpecoefp->thermal_velocity_air;
     this->Dvstar = tpecoefp->Dv/(q1+tpecoefp->Dv/(g_ac*q2));
     this->kastar = tpecoefp->ka/(q1+tpecoefp->ka/
            (tpecoefp->rho_air*CCpDRY*1.*q3));
