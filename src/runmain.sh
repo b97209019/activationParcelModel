@@ -25,9 +25,9 @@ EOF
 #in foffice
 #acs='1.0'
 #in foffice2
-acs='0.035'
+#acs='0.04'
 #in fmine
-#acs='0.005'
+acs='0.005'
 foruse='fit'
 
 case $foruse in
@@ -60,8 +60,8 @@ case $ccntycase in
     ccntys='SM1 SM2 SM3 SM4 SM5 '
     ccntys+='ccn1.data ccn2.data ccn3.data '
     ccntys+='ccn4.data ccn5.data '
-    ccntys+='ccn6.data ccn7.data '
-    ccntys+='ccn8.data ccn9.data ccna.data '
+    ccntys+='ccn6.data ccn7.data ccn8.data'
+#    ccntys+='ccn8.data ccn9.data ccna.data '
 ;;
 2)
     ccntys='ccn2e2.data ccn2e-2.data '

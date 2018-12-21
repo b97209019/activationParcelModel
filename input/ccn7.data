@@ -1,5 +1,6 @@
-"remote continental, from Jaenicke, p.12 (in Hobbs, 1993)"
+"7.urban and freeway, from Whitby (1978)"
  3                          'NCCN: number of CCN mode'
- 3200.  0.161  1.0E-8        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
- 2900.  0.217  5.8E-8        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
-  0.3   0.380  9.0E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+  2120000.    0.55388511322643763  6.5E-9         'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+   37000.     0.68309684470644383  31E-9        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+         4.9  0.75612197972133366  5.40E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+

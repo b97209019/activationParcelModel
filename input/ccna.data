@@ -1,6 +1,0 @@
-"8.labadie plume, from Whitby (1978)"
- 3                          'NCCN: number of CCN mode'
-  118000.    0.40546510810816438  4.6E-9         'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
-   30000.    0.67294447324242579  23E-9        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
-       12    0.91629073187415511  2.20E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
-

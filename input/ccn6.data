@@ -1,6 +1,6 @@
-"maritime aerosol, from Jaenicke, p.12 (in Hobbs, 1993)"
+"4.BK aged urban plume, from Whitby (1978)"
  3                          'NCCN: number of CCN mode'
-  133.    0.657  3.9E-9         'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
-   66.6   0.210  1.33E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
-    3.06  0.396  2.9E-7        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+  6600.    0.47000362924        7.0E-9         'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+  9600.    0.60976557162       60.0E-9        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
+     7.2   0.75141608868      415.0E-9        'ZCCN[CM^-3],CCNSIGMA,CCNMODE[m]'
 
