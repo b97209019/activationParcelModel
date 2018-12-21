@@ -1,7 +1,7 @@
 #	U3m/s,	aW,	DTs,	TSTART,	TSTOP,	printDts
 	4.64158883,	0,	1e-1,	0,	288000,	60
-#	P(hPa),	T(K),	RH(%),	Z(m),	ac
-	500.	0.	100.	0.	1.0
+#	P(hPa),	T(K),	RH(%),	Z(m),	ac,	aT
+	500.	0.	100.	0.	1.0	0.7
 #	aerosoltype	aerosol_distribution_file_name	nbin
 	lognormal	ccn3.data			200
 #	kappa_file

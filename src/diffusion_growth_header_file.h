@@ -15,6 +15,7 @@ using namespace std;
 extern int g_nbin;
 extern real8 g_binq;
 extern real8 g_ac;
+extern real8 g_aT;
 typedef struct TPECOEF{
     public:
         real8 K, p, S, rho_water, cw, saturated_vapor_pressure,

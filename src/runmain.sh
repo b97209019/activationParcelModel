@@ -3,8 +3,8 @@ function output(){
   cat << EOF > ../input/input.data
 #	U3m/s,	aW,	DTs,	TSTART,	TSTOP,	printDts
 	${W},	0,	1e-1,	0,	288000,	60
-#	P(hPa),	T(K),	RH(%),	Z(m),	ac
-	${P}.	${T}.	100.	0.	${ac}
+#	P(hPa),	T(K),	RH(%),	Z(m),	ac,	aT
+	${P}.	${T}.	100.	0.	${ac}	0.7
 #	aerosoltype	aerosol_distribution_file_name	nbin
 	lognormal	${ccn_type}			200
 #	kappa_file
@@ -44,7 +44,7 @@ test)
 esac
 case $ambcase in
 1)
-    Ws='10. 4.64158883 2.15443469 1.0 0.46415888 0.21544347 0.1'
+    Ws='0.1 0.21544347 0.46415888 1.0 2.15443469 4.64158883 10.'
     Ps='1000 900 800 700 600 500'
     Ts='-5 0 5 10 15 20 25 30'
 ;;

@@ -1,5 +1,5 @@
 #include"diffusion_growth_header_file.h"
-real8 g_ac, g_binq;
+real8 g_ac, g_binq, g_aT;
 int g_nbin;
 void read_input_data(real8 &W0, real8 &aW, real8 &dt,
      real8 &t_start, real8 &t_stop, real8 &print_dt,
@@ -15,8 +15,8 @@ void read_input_data(real8 &W0, real8 &aW, real8 &dt,
         &W0, &aW, &dt, &t_start, &t_stop, &print_dt);
     fgets(line, 64, input_file_ID);
     io_get_vars +=
-        fscanf(input_file_ID, "%Lf %Lf %Lf %Lf %Lf\n",
-        &p_snd, &t_snd, &rh_snd, &z_snd, &g_ac);
+        fscanf(input_file_ID, "%Lf %Lf %Lf %Lf %Lf %Lf\n",
+        &p_snd, &t_snd, &rh_snd, &z_snd, &g_ac, &g_aT);
     fgets(line, 64, input_file_ID);
     io_get_vars +=
         fscanf(input_file_ID, "%s %s %i\n", aerosol_type, 
@@ -25,7 +25,7 @@ void read_input_data(real8 &W0, real8 &aW, real8 &dt,
     io_get_vars +=
         fscanf(input_file_ID, "%s\n", kappa_file_name);
     fclose(input_file_ID);
-    if( io_get_vars != 15 ){
+    if( io_get_vars != 16 ){
         printf( "Fail to read file: %s\n",
             input_file_name );
         exit(-1);
