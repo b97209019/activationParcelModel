@@ -68,7 +68,7 @@ void set_aerosol(char *aerosol_spectrum_file_name,
     strcat(aerosol_spectrum_full_file_name, aerosol_spectrum_file_name);
     FILE *aerosol_file_ID = fopen(aerosol_spectrum_full_file_name, "r");
     for (int i = 0; i != g_nbin; ++i){
-        fscanf(aerosol_file_ID, "%Le, %Le\n", ns+i, dry_r3s+i, kapxrhow0Cs+i);
+        fscanf(aerosol_file_ID, "%Le, %Le, %Le\n", ns+i, dry_r3s+i, kapxrhow0Cs+i);
         ns[g_nbin] += ns[i];
     }
 }

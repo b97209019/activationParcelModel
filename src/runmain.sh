@@ -25,10 +25,11 @@ EOF
 #in foffice
 #acs='1.0'
 #in foffice2
-#acs='0.04'
+acs='0.04'
 #in fmine
-acs='0.005'
-foruse='fit'
+#acs='0.005'
+#foruse='fit'
+foruse='gccn'
 
 case $foruse in
 fit)
@@ -40,6 +41,11 @@ test)
     COMs='t0 t1 t2 t3 t4 t5 t6 t7 t8'
     ambcase=2
     ccntycase=3
+;;
+gccn)
+    COMs='ASd '
+    ambcase=3
+    ccntycase=2
 ;;
 esac
 case $ambcase in
@@ -53,6 +59,11 @@ case $ambcase in
     Ps='925 850 750 650 550'
     Ts='-2 4 10 16'
 ;;
+3)
+    Ws='.1 .2 .5 1. 2. 5. 10 '
+    Ps='1000 '
+    Ts='16.85 '
+;;
 esac
 
 case $ccntycase in
@@ -64,7 +75,13 @@ case $ccntycase in
 #    ccntys+='ccn8.data ccn9.data ccna.data '
 ;;
 2)
-    ccntys='ccn2e2.data ccn2e-2.data '
+    ccntys='DM1R0sxNx  DM1R7sxNx  DM2RxsxN4  DM3Rxs1Nx '
+    ccntys+='DM1R1sxNx  DM1R8sxNx  DM2RxsxN5  DM3Rxs2Nx '
+    ccntys+='DM1R2sxNx  DM1R9sxNx  DM2RxsxN6  DM3Rxs3Nx '
+    ccntys+='DM1R3sxNx  DM2RxsxN0  DM2RxsxN7  DM3Rxs4Nx '
+    ccntys+='DM1R4sxNx  DM2RxsxN1  DM2RxsxN8  DM3Rxs5Nx '
+    ccntys+='DM1R5sxNx  DM2RxsxN2  DM2RxsxN9  DM3Rxs6Nx '
+    ccntys+='DM1R6sxNx  DM2RxsxN3  DM3Rxs0Nx  DM3Rxs7Nx '
 ;;
 3)
     ccntys='ccn1D.data ccn2D.data ccn3D.data ccn4D.data ccn5D.data '
@@ -75,7 +92,7 @@ case $ccntycase in
 ;;
 esac
 
-output="../output/exp_set_12_20_18_${foruse}ac${acs}_"
+output="../output/exp_set_12_26_18_${foruse}ac${acs}_"
 
 for COM in ${COMs}; do 
     for ac in ${acs}; do 
