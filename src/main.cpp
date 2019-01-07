@@ -164,19 +164,16 @@ int main(int argc, char* argv[]){
         exit(0);
     }
 */
-        bool S_first_descend= false;
 // check if had reached Smax at previous time
         if (!Smax_reached && pre_tpecoef.S > 1 && pre_tpecoef.S > tpecoef.S){
-            S_first_descend = true;
             Smax_reached = true;
-//            fine_output_indicator = 120+print_indicator-int(model_time);
+            if (print_dt < 0)
+                fine_output_indicator = 120+print_indicator-int(model_time);
             print_indicator = int(model_time) +1;
-        }
 // output at the time reached Smax
 // caution! calculated_fdwv_time is not the
 // previous time consumed and it does
 // not cover the whole print-out interval.
-        if (S_first_descend){
             time_Smax = model_time-dt;
             real8 parcel_height = initial_height + (aW < 0? 
                   W0*(time_Smax-exp(aW*time_Smax)/aW):
@@ -212,10 +209,10 @@ int main(int argc, char* argv[]){
         if (model_time >= print_indicator){
             real8 outNc;
             output_data(
-                  tpecoef, dry_r3s, kapxrhow0Cs, h2om, ns,
-                  dwvdt, parcel_height, W, calculate_fdwv_time,
-                  model_time, outNc, ambient_file_name,
-                  particle_file_name);
+                tpecoef, dry_r3s, kapxrhow0Cs, h2om, ns,
+                dwvdt, parcel_height, W, calculate_fdwv_time,
+                model_time, outNc, ambient_file_name,
+                particle_file_name);
             if (outNc > lastPNc || outNc == 0 || !Smax_reached ){
                 t_stop = model_time + 600;
 //              t_stop = model_time + 1600;
@@ -223,10 +220,8 @@ int main(int argc, char* argv[]){
             }
             calculate_time = 0; 
             calculate_fdwv_time = 0; 
-            if (fine_output_indicator > 0){
-                print_indicator += 1;
-                --fine_output_indicator;
-            } else print_indicator += print_dt;
+            if (fine_output_indicator-- > 0) ++print_indicator;
+            else print_indicator += fabs(print_dt);
         }
     }
 }

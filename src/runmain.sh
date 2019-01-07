@@ -2,11 +2,11 @@
 function output(){
   cat << EOF > ../input/input.data
 #	U3m/s,	aW,	DTs,	TSTART,	TSTOP,	printDts
-	${W},	0,	1e-1,	0,	288000,	60
+	${W},	0,	1e-1,	0,	288000,	-60
 #	P(hPa),	T(K),	RH(%),	Z(m),	ac,	aT
 	${P}.	${T}.	100.	0.	${ac}	0.7
 #	aerosoltype	aerosol_distribution_file_name	nbin
-	lognormal	${ccn_type}			200
+	lognormal	${ccn_type}			800
 #	kappa_file
 	kap${COM}
 EOF
@@ -28,8 +28,9 @@ EOF
 acs='0.04'
 #in fmine
 #acs='0.005'
-#foruse='fit'
-foruse='gccn'
+foruse='fit'
+#foruse='test'
+#foruse='gccn'
 
 case $foruse in
 fit)
@@ -92,7 +93,7 @@ case $ccntycase in
 ;;
 esac
 
-output="../output/exp_set_12_26_18_${foruse}ac${acs}_"
+output="../output/exp_set_01_07_19_${foruse}ac${acs}_"
 
 for COM in ${COMs}; do 
     for ac in ${acs}; do 
